@@ -28,15 +28,15 @@ const PokemonItem = ({ pokemon, handleOpenModal }) => {
           <span className="block font-semibold text-xl">
             Exp: {pokemon.base_experience}
           </span>
+          {/* <button className="bg-transparent rounded-full text-gray-700 text-xs font-bold px-3 py-2 leading-none flex items-center">
+            ♡
+          </button> */}
+          {/*<button className="bg-transparent rounded-full text-red-700 text-xs font-bold px-3 py-2 leading-none flex items-center">
+            ♥
+          </button> */}
           <span className="bg-amber-500 rounded-full text-gray-900 text-xs font-bold px-3 py-2 leading-none flex items-center">
             #: {pokemon.id}
           </span>
-          {/* <span className="bg-gray-700 rounded-full text-yellow-700 text-xs font-bold px-3 py-2 leading-none flex items-center">
-            ♡
-          </span>
-          <span className="bg-gray-700 rounded-full text-yellow-700 text-xs font-bold px-3 py-2 leading-none flex items-center">
-            ♥
-          </span> */}
         </div>
       </div>
     </div>

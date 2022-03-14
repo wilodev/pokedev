@@ -25,8 +25,8 @@ const getColorsPokemon = (imgSrc) => {
   const imgData = ctx.getImageData(
     Math.trunc(canvas.width / 2),
     Math.trunc(canvas.height / 2),
-    4,
-    4
+    5,
+    5
   ).data;
   // Se recorre el array de pixeles
   for (let i = 0; i < imgData.length; i = i + 4) {

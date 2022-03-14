@@ -3,14 +3,14 @@ import "./style.css";
 
 const PokedexModal = ({ pokemon, handleCloseModal }) => {
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-slate-800">
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70">
       <button
         onClick={handleCloseModal}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Cerrar X
       </button>
-      <div className="pokeindex">
+      <div className="pokeindex opacity-100">
         <div className="pokeindex-left">
           <div className="pokeindex-left__top">
             <div className="circle-big"></div>
