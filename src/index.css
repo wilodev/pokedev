@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "poke-hollow";
-  src: url(../static/font/Pokemon\ Hollow.ttf);
+  src: url(./fonts/Pokemon\ Hollow.ttf);
 }
 
 @font-face {
   font-family: "poke-solid";
-  src: url(../static/font/Pokemon\ Solid.ttf);
+  src: url(./fonts/Pokemon\ Solid.ttf);
 }
 
 body {
