@@ -8,12 +8,8 @@ const getAll = async () => {
     const pokemonsData = await Promise.all(
       pokemonsResponse.results.map((pokemon) => ApiDetails(pokemon.url))
     );
-    // Seteamos el color de cada pokemon
-    const pokemonsWithColor = pokemonsData.map((pokemon) => {
-      pokemon.bgColors = getColorsPokemon(pokemon.sprites.front_default);
-      return pokemon;
-    });
-    // LLamada a la función Api
+    const pokemonsWithColor = await getColorsPokemon(pokemonsData);
+    // Se retorna los pokemos con sus colores
     return pokemonsWithColor;
   } catch (error) {
     return false;
@@ -26,8 +22,8 @@ const getOne = async (findPokemons) => {
       `${import.meta.env.VITE_APP_URL_API}pokemon/${findPokemons}`
     );
     const pokemon = await response.json();
-    const colors = getColorsPokemon(pokemon.sprites.front_default);
-    return { ...pokemon, bgColors: colors };
+    const pokemonWithColor = await getColorsPokemon([pokemon]);
+    return pokemonWithColor;
   } catch (error) {
     return false;
   }

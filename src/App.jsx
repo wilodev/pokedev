@@ -63,7 +63,7 @@ const App = () => {
     const response = await getOne(state.search);
     if (response) {
       // Ahora disparamos la acción de añadir al estado los pokemons
-      dispatch({ type: ADD_POKEMONS, payload: [response] });
+      dispatch({ type: ADD_POKEMONS, payload: response });
       // setPokemons([response]);
     } else {
       dispatch({ type: ADD_ERROR, payload: true });
