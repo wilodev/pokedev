@@ -10,9 +10,9 @@ const Hero = () => {
             <Header />
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-200 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">PokeDev</span>
-                  <span className="block text-yellow-600 xl:inline">
+                <h1 className=" text-4xl tracking-tight font-extrabold text-gray-200 sm:text-5xl md:text-6xl">
+                  <span className="block xl:inline text-4xl ">PokeDev </span>
+                  <span className="block text-yellow-600 xl:inline text-3xl md:text-4xl mb-4 md:mb-0">
                     Buscador de pokemons
                   </span>
                 </h1>
@@ -24,7 +24,7 @@ const Hero = () => {
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-72 lg:w-full lg:h-full"
             src="./images/pikachu.png"
-            alt=""
+            alt="Pikachu Imagen"
           />
         </div>
       </div>

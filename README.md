@@ -23,3 +23,7 @@ Este proyecto se basa en **ReactJS** con **ViteJs** para la conexión al api de 
 1. `http://localhost:3000` Abrir esta url en tu navegador de preferencia.
 
 ### Proyecto en Producción
+
+### Proyecto en Producción
+
+1. `https://pokedev-psi.vercel.app/` Abrir esta url en tu navegador de preferencia.
