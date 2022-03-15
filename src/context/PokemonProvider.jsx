@@ -1,15 +1,16 @@
 import React, { createContext, useReducer } from "react";
 import { commonReducer } from "@/reducer";
-// Se crea el estado inicial
-const initialState = {
-  pokemons: [],
-  currentPokemon: {},
-  isLoading: false,
-  error: false,
-  favorites: [],
-  modal: false,
-  search: "",
-};
+import { initialState } from "@/store/initialState";
+// // Se crea el estado inicial
+// const initialState = {
+//   pokemons: [],
+//   currentPokemon: {},
+//   isLoading: false,
+//   error: false,
+//   favorites: [],
+//   modal: false,
+//   search: "",
+// };
 const PokemonContext = createContext(initialState);
 
 const PokemonProvider = ({ children }) => {

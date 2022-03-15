@@ -9,6 +9,7 @@ import {
   SET_SEARCH,
   SET_MODAL,
 } from "@/actions/types";
+
 const commonReducer = (state, action) => {
   switch (action.type) {
     case ADD_POKEMONS:
@@ -20,7 +21,7 @@ const commonReducer = (state, action) => {
     case ADD_LOADING:
       return {
         ...state,
-        isLoading: action.payload,
+        isLoading: true,
         error: false,
       };
     case ADD_FAVORITE:
@@ -31,9 +32,7 @@ const commonReducer = (state, action) => {
     case REMOVE_FAVORITE:
       return {
         ...state,
-        favorites: state.favorites.filter(
-          (pokemon) => pokemon.id !== action.payload
-        ),
+        favorites: action.payload,
       };
     case ADD_CURRENT_POKEMON:
       return {
@@ -43,7 +42,7 @@ const commonReducer = (state, action) => {
     case ADD_ERROR:
       return {
         ...state,
-        error: action.payload,
+        error: true,
         isLoading: false,
       };
     case SET_SEARCH:

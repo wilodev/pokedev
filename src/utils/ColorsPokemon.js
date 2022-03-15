@@ -53,9 +53,13 @@
 // export { getColorsPokemon };
 
 const loadImage = async (url) => {
+  //  Retornamos una promesa cuando la imagen este lista para poder usarse en su entorno virtual
   return new Promise((resolve, reject) => {
+    // Se crea una instancia virtual de la imagen
     const img = new Image();
+    // Se crea la función resolver cuando la imagen termina de cargar
     img.onload = () => resolve(img);
+    // Se crea la función rechazar cuando la imagen no se puede cargar
     img.onerror = (err) => reject(err);
     img.setAttribute("crossOrigin", "Anonymous");
     // Se le asigna la url de la imagen
@@ -63,6 +67,7 @@ const loadImage = async (url) => {
     // Se asigna el ancho y alto de la imagen
     img.setAttribute("width", 96);
     img.setAttribute("height", 96);
+    // Se retorna la imagen
     return img;
   });
 };

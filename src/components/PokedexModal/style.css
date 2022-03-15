@@ -371,7 +371,6 @@
   border: 2px solid var(--bg-black);
   border-left-color: var(--bg-red);
   border-radius: 0 5px 5px 0;
-  display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
 }

@@ -11,7 +11,7 @@ const PokedexModal = ({ pokemon, handleCloseModal }) => {
         Cerrar X
       </button>
       <div className="pokeindex opacity-100">
-        <div className="pokeindex-left">
+        <div className="pokeindex-left ml-16 md:ml-0">
           <div className="pokeindex-left__top">
             <div className="circle-big"></div>
             <div className="circle-small"></div>
@@ -52,12 +52,12 @@ const PokedexModal = ({ pokemon, handleCloseModal }) => {
             </div>
           </div>
         </div>
-        <div className="pokeindex-middle"></div>
-        <div className="pokeindex-right">
+        <div className="pokeindex-middle hidden md:block"></div>
+        <div className="pokeindex-right hidden md:flex">
           <div className="pokeindex-right__screen flex w-full h-full container justify-content">
             <p className="center py-8 px-2">Lorem ipsum dolor sit amet</p>
           </div>
-          <div className="pokeindex-right__buttons">
+          <div className="pokeindex-right__buttons ">
             <span></span>
             <span></span>
             <span></span>

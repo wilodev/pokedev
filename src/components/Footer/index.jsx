@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container w-full h-14 m-8">
+    <div className="h-14 mt-8 ml-8">
       <p className="text-white">
         PokeDev{" "}
         <a
